@@ -1,0 +1,1573 @@
+            <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>RescueHub - Emergency Assistance</title>
+                    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+                    <style>
+                        *{
+                            box-sizing: border-box;
+                        }
+                        body{
+                            margin: 0;
+                            padding: 0;
+                            font-family: Arial;
+                        }
+                        header{
+                            background: rgb(141, 15, 15);
+                            text-align: center;
+                            color: white;
+                            padding: 10px;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                        nav{
+                            background-color: black;
+                            text-align: center;
+                            padding: 15px;
+                        }
+                        nav a{
+                            text-decoration: none;
+                            color: white;
+                            margin: 10px 20px;
+                            font-size: 18px;
+                        }
+
+                            nav a:hover{
+                                color: red;
+                            }
+                            
+                        
+                        
+                        .emg-assist{
+                            background-color: rgb(246, 217, 222);
+                            text-align: center;
+                            padding: 25px;
+                        }
+                           .emg-assist h2{
+                                font-size: 35px;
+                            }
+                            .card{
+                                display: flex;
+                                justify-content: center;
+                                align-items: stretch;
+                                gap: 25px;
+                                flex-wrap: wrap;
+                            }
+                            .ambulance{
+                                background: white;
+                                border-radius: 20px;
+                                padding: 20px;
+                                width: 250px;
+                                box-shadow: 0 4px 10px #0002;
+                            }
+                            .badge{
+                                display: inline-block;
+                                background: #a34d4d;
+                                color: white;
+                                padding: 5px 10px;
+                                border-radius: 15px;
+                                font-size: 12px;
+                            }
+                            .icon{
+                                font-size: 40px;
+                                margin: 15px;
+                            }
+                        button{
+                            background-color: red;
+                            color: white;
+                            border: none;
+                            padding: 10px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            transition: 500ms;
+
+                            &:hover{
+                                background-color: rgb(110, 18, 18);
+                            }
+
+                        }
+                    .emg-services{
+                            background-color:whitesmoke;
+                            text-align: center;
+                            padding: 25px;
+                            
+                    }
+                    .Emergency-contact{
+                     background-color: rgb(247, 247, 222);
+                     text-align: center;
+                     padding: 30px 15px;
+                    }
+                    .Emergency-contact h2{
+                        font-size: 25px;
+                        margin-bottom: 25px;
+                        color: #333;
+                    }
+                    .Contact-box{
+                    background-color: aliceblue;
+                    max-width: 350px;
+                    margin: auto;
+                    padding: 15px 20px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 10px #0002;
+                    }
+                    .Contact-box ul{
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .Contact-box li{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 12px 5px;
+                        border-bottom: 3px solid #ddd;
+                        font-size: 16px;
+                    }
+                    .Contact-box li:last-child{
+                     border-bottom: none;
+                    }
+                    .Contact-box a{
+                        color: #8d0f0f;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    .Contact-box a:hover {
+                        color: red;
+                        text-decoration: underline;
+                    }
+                    .footer{
+                        background-color: rgb(8, 8, 8);
+                        text-align: center;
+                        color: white;
+                        padding: 15px;
+                        margin: 0;
+                        border-radius: 0px;
+
+                        
+                    }
+                    .footer p{
+                    text-align: center;
+                    font-size: 16px;
+                    margin: 0;
+                    }
+                    </style>
+                </head>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                <body>
+                    <header>
+                        <h1>RescueHub</h1>
+                        <p>Emergency Assistance at Your Fingertips</p>
+                    </header>
+                    <nav class="navbar">
+                        <a href="#Home">Home</a>
+                        <a href="#Emergency">Emergency</a>
+                        <a href="#Hospitals">Hospitals</a>
+                        <a href="#Contacts">Contacts</a>
+
+                    </nav>
+                    <main>
+                        <section class="emg-assist">
+                            <h2>Emergency Assistance</h2>
+                            <p>Stay calm. Get the right help at the right time.</p>
+                            <button>Get Emergency Help</button>
+                        </section>
+                        <section class="emg-services" id="Emergency">
+                            <h2>Emergency Services</h2>
+                            <div class="card">
+                             <div class=" ambulance">
+                              <span class="badge">24/7</span>
+                              <div class="icon">🚑</div>
+                              <h3>Ambulance</h3>
+                              <p>Get immediate medical transportation.</p>
+                              <button>Call Ambulance</button>
+                                 </div>  
+                                 <div class="ambulance">
+                                    <span class="badge">URGENT</span>
+                                    <Div class="icon">🚓</Div>
+                                    <h3>Police</h3>
+                                    <p>Contact the police for immediate safety and security assistance.</p>
+                                    <button>Contact Police</button>
+
+                                 </div> 
+                                 <div class="ambulance">
+                                    <span class="badge">AVAILABLE</span>
+                                    <div class="icon">🚒</div>
+                                    <h3>Fire Services</h3>
+                                    <p>Get quick assistance during fire and rescue emergencies.</p>
+                                    <button>Call Fire Services</button>
+
+                                 </div>
+
+                            </div>
+                        </section>
+                        <section class="Emergency-contact" id="Contact">
+                            <h2>📞 Emergency Contacts</h2>
+                            <div class="Contact-box">
+                                <ul>
+                                    <li>
+                                        <span>🚓 Police</span>
+                                        <a href="tel:112">112</a>
+                                    </li>
+                                    <li>
+                                        <span>🚑 Ambulance</span>
+                                        <a href="tel:108">108</a>
+                                    </li>
+                                    <li>
+                                        <span>🚒 Fire Service</span>
+                                        <a href="tel:101">101</a>
+                                    </li>
+                                    <li>
+                                        <span>🆘 Emergency</span>
+                                        <a href="tel:112">112</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </section>
+                        </main>
+                        <footer class="footer">
+                            <p>© 2026 RescueHub | Emergency Assistance</p>
+                        </footer>
+                            
+                        </body>
+                        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                            
+
+
+
+
+
+
+
+
+                        
+                            
+
+
+
+
+
+
+                        
+                            
+
+
+
+
+
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+
+                        
+                        
+                        
+                        
+                        
+
+                        
+
+
+                        
+                        
+                        
+
+                        
+
+                        
+
+
+                        
+                        
+                        
+                        
+                        
+                            
+                        
+
+
+                        
+                        
+
+                        
+
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                        </section>
+                        <section class=""></section>
+                    </main>
+                </body>
+                </html>
